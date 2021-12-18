@@ -1,0 +1,163 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/* Headings */
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* sections */
+.colored {
+  background-color: #ff4c68;
+  color: white;
+}
+
+.white {
+  background-color: white;
+}
+
+/* navigation bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* spacing out nav items */
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+/* download buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+  /* don't use commas ^ */
+}
+
+/* title section */
+
+/* this targets the .container-fluid class inside the title section
+therefore it overrides the previous container-fluid class */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+.title-image {
+  position: absolute;
+  right: 20%;
+  width: 20%;
+  /* transform: rotate(15deg); */
+}
+
+.icon {
+  color: #ef8172;
+  font-size: 70px;
+  margin-bottom: 1rem;
+}
+
+#features {
+  position: relative;
+  /* covering image exercise
+Absolute position brought image on top of title section and
+relative position kept features section in place,
+thus covering the image that was on top of everything
+ */
+}
+
+.feature-titles {
+  font-size: 1.5rem;
+}
+
+.features-box {
+  padding: 4.5%;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* testimonials */
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 20%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing */
+#pricing {
+  padding: 5%;
+}
+
+.section-heading {
+  line-height: 1.5;
+  font-size: 3rem;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+
+
+@media (max-width: 1155px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    /* transform: rotate(0); */
+    width: 60%;
+  }
+}
